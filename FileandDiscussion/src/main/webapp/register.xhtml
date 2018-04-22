@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Create an account</title>
+        <meta name="author" content="Riccardo Massera"></meta>
+        <style type="text/css">
+            .form-register {
+                margin: 0 auto;
+                max-width: 330px;
+                padding: 15px;
+            }
+            .prompt {
+                  margin: 0 auto;
+                max-width: 430px;
+                padding: 15px;
+            }
+        </style>
+    </h:head>
+    <h:body style="padding-top: 60px; background-color: #add;">
+        <b:container>
+            <h2 styleClass="prompt" class="form-signin-heading">Register as a new user</h2>
+            <h:form styleClass="form-register" prependId="false">
+               
+                <b:inputText id="email" placeholder="Email address" >
+                    <f:facet name="prepend">
+                        <b:icon name="user" />
+                    </f:facet>
+                </b:inputText>
+                <b:inputText id="password" placeholder="Password" type="password">
+                    <f:facet name="prepend">
+                        <b:iconAwesome name="key" />
+                    </f:facet>
+                </b:inputText>
+                <b:commandButton look="primary btn-block" value="Register" icon="register" size="lg"/>
+            </h:form>
+        </b:container>
+    </h:body>
+</html>
